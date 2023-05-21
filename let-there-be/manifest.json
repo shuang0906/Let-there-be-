@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Let there be ■■■■■",
+  "description": "■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■",
+  "version": "1.0",
+  "action": {
+    "default_popup": "/Popup/popup.html"
+  },
+
+  "icons":{
+    "16": "/Assets/logo16.png",
+    "48": "/Assets/logo48.png",
+    "128": "/Assets/logo128.png"
+  },
+  
+  "permissions":[
+    "activeTab"
+  ],
+  
+  "content_scripts": [
+    {
+      "js": ["content.js"],
+      "matches": ["<all_urls>"],
+      "run_at": "document_idle",
+      "css": ["contentScript.css"]
+    }
+  ]
+}
